@@ -37,4 +37,4 @@ env.getCheckpointConfig().enableUnalignedCheckpoints();
 ecution.checkpointing.unaligned: true
 ```
 
-# 对齐 Checkpoint 的超时
+# 对齐 Checkpoint 的超时操作
