@@ -28,7 +28,7 @@ mindmap
 ```
 
 ## 1、核心特性
-ZK保证的是最终一致性。
+ZK保证的是 强一致性。
 
 ZK通过ZAB(Zookeeper Atomic Broadcast)协议来实现最终一致性。在ZAB协议中，Leader收到查过搬书Follower的ACK响应消息后，就会向所有Follower广播Commit消息，要求其提交事务。这意味着可能出现有的Follower已经Commit，但是有的Follower还没Commit的情况，此时不同客户端连接到不同Follower可能读到不一致的数据，但最终所有节点数据会达成一致。
 
